@@ -1,0 +1,7 @@
+<uwsgi>
+<socket>:8077</socket>
+<chdir>/home/wpl/python/django/HelloWorld</chdir>
+<module>django_wsgi</module>
+<processes>4</processes>
+<daemonize>uwsgi.log</daemonize>
+</uwsgi>
