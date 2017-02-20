@@ -18,7 +18,7 @@ print soup.head.contents[0]
 
 
 #<p> 按段落
-print soup.body.children
+#print soup.body.children
 for child in soup.body.children:
     print "11111111111111111111111111111111111111"
     print child

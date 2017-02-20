@@ -14,6 +14,7 @@ result1 = re.match(pattern,'hello')
 result2 = re.match(pattern,'helloo wpl')
 result3 = re.match(pattern,'helo wpl')
 result4 = pattern.match('hello_wpl')   #另一种调用方法
+result5 = re.search(pattern, 'wpl_hello')   #使用match搜索不到.
 
 if result1:
     #使用Match获取分组信息
@@ -38,3 +39,8 @@ if result4:
     print result4.group()
 else:
     print '4匹配失败'
+
+if result5:
+    print result5.group()
+else:
+    print '5匹配失败'
